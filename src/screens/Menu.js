@@ -9,7 +9,7 @@ import {
 import AsyncStorage from '@react-native-community/async-storage';
 import { DrawerItems } from 'react-navigation-drawer';
 import axios from 'axios'
-import Icon from 'react-native-vector-icons/FontAwesome5'
+import Icon from 'react-native-vector-icons/FontAwesome'
 import commonStyles from '../commonStyles'
 
 export default props => {
