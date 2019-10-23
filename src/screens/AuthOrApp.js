@@ -10,8 +10,8 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 export default class AuthOrApp extends Component {
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         YellowBox.ignoreWarnings(['Setting a timer', 'Warning: componentWillMount is deprecated',
         'Warning: componentWillReceiveProps is deprecated',]);

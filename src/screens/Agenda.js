@@ -31,8 +31,8 @@ export default class Agenda extends Component {
         showAddTask: false,
     }
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         YellowBox.ignoreWarnings(['Setting a timer', 'Warning: componentWillMount is deprecated',
         'Warning: componentWillReceiveProps is deprecated',]);
     }
