@@ -13,8 +13,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import commonStyles from '../commonStyles'
 
 export default props => {
-    const logout = () => {
-        delete axios.defaults.headers.common['Authorization']
+    const logout = () => {        
         AsyncStorage.removeItem('userData')
         props.navigation.navigate('Loading')
     }

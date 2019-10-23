@@ -13,18 +13,8 @@ import commonStyles from '../commonStyles'
 import Swipeable from 'react-native-swipeable'
 
 export default props => {
-    let check = null
-    if (props.doneAt !== null) {
-        check = (
-            <View style={styles.done}>
-                <Icon name='check' size={20}
-                    color={commonStyles.colors.secondary} />
-            </View>
-        )
-    } else {
-        check = <View style={styles.pending} />
-    }
-
+    let check = <View style={styles.pending} />
+   
     const descStyle = props.doneAt !== null ?
         { textDecorationLine: 'line-through' } : {}
 
@@ -53,12 +43,9 @@ export default props => {
                     <View style={styles.checkContainer}>{check}</View>
                 </TouchableWithoutFeedback>
                 <View>
-                    <Text style={[styles.description, descStyle]}>
-                        {props.desc}
-                    </Text>
-                    <Text style={styles.date}>
-                        {moment(props.estimateAt).locale('pt-br').format('ddd, D [de] MMMM [de] YYYY')}
-                    </Text>
+                    <Text style={[styles.description]}>
+                        {props.title} - {props.description}
+                    </Text>                    
                 </View>
             </View>
         </Swipeable>

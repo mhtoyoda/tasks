@@ -6,39 +6,50 @@ import {
     ImageBackground,
     FlatList,
     TouchableOpacity,
-    Platform
+    Platform,
+    YellowBox,
+    Alert
 } from 'react-native'
-import axios from 'axios'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import commonStyles from '../commonStyles'
+import Firebase, { db } from '../../config/Firebase'
 import Task from '../components/Task'
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import ActionButton from 'react-native-action-button'
 import AddTask from './AddTask'
-import { server, showError } from '../common'
-
+import { showError } from '../common'
 import todayImage from '../../assets/imgs/today.jpg'
-import tomorrowImage from '../../assets/imgs/tomorrow.jpg'
-import weekImage from '../../assets/imgs/week.jpg'
-import monthImage from '../../assets/imgs/month.jpg'
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default class Agenda extends Component {
     state = {
+        uid: '',
         tasks: [],
-        visibleTasks: [],
+        samePeriod: false,
         showDoneTasks: true,
         showAddTask: false,
     }
 
+    constructor(){
+        super()
+        YellowBox.ignoreWarnings(['Setting a timer', 'Warning: componentWillMount is deprecated',
+        'Warning: componentWillReceiveProps is deprecated',]);
+    }
+
     addTask = async task => {
         try {
-            // await axios.post(`${server}/tasks`, {
-            //     desc: task.desc,
-            //     estimateAt: task.date
-            // })
+            const taskNew = {
+                id: new Date().toISOString(),
+                userId: this.state.uid,
+                title: task.title,
+                description: task.description,
+                doneAt: ''
+            }
 
-            this.setState({ showAddTask: false }, this.loadTasks)
+            db.collection('tasks').doc().set(taskNew)
+            this.setState({ showAddTask: false, tasks: [...this.state.tasks, taskNew ]})
+            Alert.alert('Nova Tarefa', 'Nova Tarefa Salva')
         } catch (err) {
             showError(err)
         }
@@ -46,37 +57,56 @@ export default class Agenda extends Component {
 
     deleteTask = async id => {
         try {
-            // await axios.delete(`${server}/tasks/${id}`)
-            // await this.loadTasks()
+            var taskkill_query = await db.collection('tasks').where('id', '==', id);
+            taskkill_query.get().then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    doc.ref.delete();                    
+                });
+            });
+
+            this.setState({tasks: this.state.tasks.filter(function(task) { 
+                return task.id !== id 
+            })});
+            Alert.alert('Tarefa', 'Tarefa Removida')
+
         } catch (err) {
             showError(err)
         }
     }
 
-    filterTasks = () => {
-        let visibleTasks = null
-        if (this.state.showDoneTasks) {
-            visibleTasks = [...this.state.tasks]
-        } else {
-            const pending = task => task.doneAt === null
-            visibleTasks = this.state.tasks.filter(pending)
-        }
-        this.setState({ visibleTasks })
-    }
+    componentDidMount = async () => {               
+        const json = await AsyncStorage.getItem('userData')
+        const userData = JSON.parse(json) || {}
 
-    toggleFilter = () => {
-        this.setState({ showDoneTasks: !this.state.showDoneTasks }
-            , this.filterTasks)
-    }
-
-    componentDidMount = async () => {
+        this.setState({ uid: userData.uid })
+        await this.verifyAccesLast()
+        this.lastAccessApp();
         this.loadTasks()
     }
 
+    lastAccessApp = async () => {
+        const access = {
+            userId: this.state.uid,
+            lastAccess: moment().locale('pt-br').format('L')
+        }
+
+        db.collection('accessUser').doc(this.state.uid).set(access)
+    }
+
     toggleTask = async id => {
-        try {
-            // await axios.put(`${server}/tasks/${id}/toggle`)
-            await this.loadTasks()
+        try {           
+            var taskkill_query = await db.collection('tasks').where('id', '==', id);
+            taskkill_query.get().then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    doc.ref.update('doneAt', moment().locale('pt-br').format('L'));                    
+                });
+            });
+
+            this.setState({tasks: this.state.tasks.filter(function(task) { 
+                return task.id !== id 
+            })});
+
+            Alert.alert('Tarefa', 'Tarefa Realizada')
         } catch (err) {
             showError(err)
         }
@@ -84,14 +114,55 @@ export default class Agenda extends Component {
 
     loadTasks = async () => {
         try {
-            const maxDate = moment()
-                .add({ days: this.props.daysAhead })
-                .format('YYYY-MM-DD 23:59')
-            // const res = await axios.get(`${server}/tasks?date=${maxDate}`)
-            // this.setState({ tasks: res.data }, this.filterTasks)
+            if(this.state.samePeriod){
+                const date = moment().locale('pt-br').format('L')            
+                await db.collection('tasks').where('userId', '==', this.state.uid).get()
+                .then(snapshot => {
+                    snapshot.forEach(doc => {
+                        const data = doc.data();
+                        if(data.doneAt !== date){
+                            this.setState({ tasks: [...this.state.tasks, data ]})
+                        }
+                    });
+                })         
+                .catch(err => {
+                    showError(err)
+                });
+            }else{
+                await db.collection('tasks').where('userId', '==', this.state.uid).get()
+                .then(snapshot => {
+                    snapshot.forEach(doc => {
+                        const data = doc.data();
+                        this.setState({ tasks: [...this.state.tasks, data ]})
+                    });
+                })
+                .catch(err => {
+                    showError(err)
+                });
+            }
+            
+            if(this.state.tasks.length === 0){
+                Alert.alert('Tarefas', 'Não há Tarefas Pendentes para Hoje!')
+            }
         } catch (err) {
             showError(err)
         }
+    }
+
+    verifyAccesLast = async () => {
+        await db.collection('accessUser').where('userId', '==', this.state.uid).get()
+            .then(snapshot => {
+                snapshot.forEach(doc => {
+                const data = doc.data();
+                if (moment().locale('pt-br').format('L') === data.lastAccess) {
+                    this.setState({ samePeriod: true })                    
+                }
+                
+                });
+            })            
+            .catch(err => {
+                showError(err)
+            });
     }
 
     render() {
@@ -102,18 +173,10 @@ export default class Agenda extends Component {
             case 0:
                 styleColor = commonStyles.colors.today
                 image = todayImage
-                break
-            case 1:
-                styleColor = commonStyles.colors.tomorrow
-                image = tomorrowImage
-                break
-            case 7:
-                styleColor = commonStyles.colors.week
-                image = weekImage
-                break
+                break            
             default:
-                styleColor = commonStyles.colors.month
-                image = monthImage
+                styleColor = commonStyles.colors.today
+                image = todayImage
                 break
         }
 
@@ -127,11 +190,7 @@ export default class Agenda extends Component {
                     <View style={styles.iconBar}>
                         <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                             <Icon name='bars' size={20} color={commonStyles.colors.secondary} />
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={this.toggleFilter}>
-                            <Icon name={this.state.showDoneTasks ? 'eye' : 'eye-slash'}
-                                size={20} color={commonStyles.colors.secondary} />
-                        </TouchableOpacity>
+                        </TouchableOpacity>                      
                     </View>
                     <View style={styles.titleBar}>
                         <Text style={styles.title}>{this.props.title}</Text>
@@ -141,7 +200,7 @@ export default class Agenda extends Component {
                     </View>
                 </ImageBackground>
                 <View style={styles.taksContainer}>
-                    <FlatList data={this.state.visibleTasks}
+                    <FlatList data={this.state.tasks}
                         keyExtractor={item => `${item.id}`}
                         renderItem={({ item }) => 
                             <Task {...item} onToggleTask={this.toggleTask}

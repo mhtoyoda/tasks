@@ -12,9 +12,7 @@ export default class AuthOrApp extends Component {
     componentDidMount = async () => {
         const json = await AsyncStorage.getItem('userData')
         const userData = JSON.parse(json) || {}
-
-        if (userData.token) {
-            axios.defaults.headers.common['Authorization'] = `bearer ${userData.token}`
+        if (userData.uid) {            
             this.props.navigation.navigate('Home', userData)
         } else {
             this.props.navigation.navigate('Auth')

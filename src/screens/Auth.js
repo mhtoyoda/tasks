@@ -9,8 +9,7 @@ import {
 } from 'react-native'
 import Firebase from '../../config/Firebase'
 import AsyncStorage from '@react-native-community/async-storage';
-import axios from 'axios'
-import { server, showError } from '../common'
+import { showError } from '../common'
 import AuthInput from '../components/AuthInput'
 import commonStyles from '../commonStyles'
 import backgroundImage from '../../assets/imgs/login.jpg'
@@ -30,21 +29,11 @@ export default class Auth extends Component {
                 .auth()
                 .signInWithEmailAndPassword(this.state.email, this.state.password)
                 .then(res => {
-                    console.log(res);
-                    this.props.navigation.navigate('Home', res.data);
-                });
-
-            // const res = await axios.post(`${server}/signin`, {
-            //     email: this.state.email,
-            //     password: this.state.password
-            // })
-
-            // axios.defaults.headers.common['Authorization']
-            //     = `bearer ${res.data.token}`
-            // AsyncStorage.setItem('userData', JSON.stringify(res.data))            
+                    AsyncStorage.setItem('userData', JSON.stringify(res.user))
+                    this.props.navigation.navigate('Home', res.user);
+                });                     
         } catch (err) {
-            Alert.alert('Erro', 'Falha no Login!')
-            // showError(err)
+            Alert.alert('Erro', 'Falha no Login!')         
         }
     }
 
@@ -52,17 +41,9 @@ export default class Auth extends Component {
         try {
             Firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
                 .then(user => {
-                    console.warn(user);
-                })
-            // await axios.post(`${server}/signup`, {
-            //     name: this.state.name,
-            //     email: this.state.email,
-            //     password: this.state.password,
-            //     confirmPassword: this.state.confirmPassword
-            // })
-
-            Alert.alert('Sucesso!', 'Usuário cadastrado :)')
-            this.setState({ stageNew: false })
+                    Alert.alert('Sucesso!', 'Usuário cadastrado :)')
+                    this.setState({ stageNew: false })
+                })           
         } catch (err) {
             showError(err)
         }

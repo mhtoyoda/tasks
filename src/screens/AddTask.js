@@ -4,17 +4,13 @@ import {
     View,
     Text,
     TextInput,
-    DatePickerIOS,
     StyleSheet,
     TouchableWithoutFeedback,
     TouchableOpacity,
     Alert,
-    DatePickerAndroid,
     Platform
 } from 'react-native'
-import moment from 'moment'
 import commonStyles from '../commonStyles'
-
 
 export default class AddTask extends Component {
 
@@ -25,13 +21,17 @@ export default class AddTask extends Component {
 
     getInitialState = () => {
         return {
-            desc: '',
-            date: new Date()
+            title: '',
+            description: ''            
         }
     }
 
     save = () => {
-        if (!this.state.desc.trim()) {
+        if (!this.state.title.trim()) {
+            Alert.alert('Dados inválidos', 'Informe um título para a tarefa')
+            return
+        }
+        if (!this.state.description.trim()) {
             Alert.alert('Dados inválidos', 'Informe uma descrição para a tarefa')
             return
         }
@@ -40,35 +40,8 @@ export default class AddTask extends Component {
         this.props.onSave(data)
     }
 
-    handleDateAndroidChanged = () => {
-        DatePickerAndroid.open({
-            date: this.state.date
-        }).then(e => {
-            if (e.action !== DatePickerAndroid.dismissedAction) {
-                const momentDate = moment(this.state.date)
-                momentDate.date(e.day)
-                momentDate.month(e.month)
-                momentDate.year(e.year)
-                this.setState({ date: momentDate.toDate() })
-            }
-        })
-    }
-
     render() {
-        let datePicker = null
-        if (Platform.OS === 'ios') {
-            datePicker = <DatePickerIOS mode='date' date={this.state.date}
-                onDateChange={date => this.setState({ date })} />
-        } else {
-            datePicker = (
-                <TouchableOpacity onPress={this.handleDateAndroidChanged}>
-                    <Text style={styles.date}>
-                        {moment(this.state.date).format('ddd, D [de] MMMM [de] YYYY')}
-                    </Text>
-                </TouchableOpacity>
-            )
-        }
-
+        
         return (
             <Modal onRequestClose={this.props.onCancel}
                 visible={this.props.isVisible}
@@ -79,10 +52,13 @@ export default class AddTask extends Component {
                 </TouchableWithoutFeedback>
                 <View style={styles.container}>
                     <Text style={styles.header}>Nova Tarefa!</Text>
+                    <TextInput placeholder="Título..." style={styles.input}
+                        onChangeText={title => this.setState({ title })}
+                        value={this.state.title} />
                     <TextInput placeholder="Descrição..." style={styles.input}
-                        onChangeText={desc => this.setState({ desc })}
-                        value={this.state.desc} />
-                    {datePicker}
+                        onChangeText={description => this.setState({ description })}
+                        value={this.state.description} />    
+                    
                     <View style={{
                         flexDirection: 'row',
                         justifyContent: 'flex-end'
