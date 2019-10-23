@@ -8,7 +8,8 @@ import {
     TouchableWithoutFeedback,
     TouchableOpacity,
     Alert,
-    Platform
+    Platform,
+    YellowBox
 } from 'react-native'
 import commonStyles from '../commonStyles'
 
@@ -16,13 +17,18 @@ export default class AddTask extends Component {
 
     constructor(props) {
         super(props)
+
+        YellowBox.ignoreWarnings(['Setting a timer', 'Warning: componentWillMount is deprecated',
+            'Warning: componentWillReceiveProps is deprecated',
+        ]);
+
         this.state = this.getInitialState()
     }
 
     getInitialState = () => {
         return {
             title: '',
-            description: ''            
+            description: ''
         }
     }
 
@@ -36,45 +42,61 @@ export default class AddTask extends Component {
             return
         }
 
-        const data = { ...this.state }
+        const data = {...this.state }
         this.props.onSave(data)
     }
 
     render() {
-        
-        return (
-            <Modal onRequestClose={this.props.onCancel}
-                visible={this.props.isVisible}
-                animationType='slide' transparent={true}
-                onShow={() => this.setState({ ...this.getInitialState() })}>
-                <TouchableWithoutFeedback onPress={this.props.onCancel}>
-                    <View style={styles.offset}></View>
-                </TouchableWithoutFeedback>
-                <View style={styles.container}>
-                    <Text style={styles.header}>Nova Tarefa!</Text>
-                    <TextInput placeholder="Título..." style={styles.input}
-                        onChangeText={title => this.setState({ title })}
-                        value={this.state.title} />
-                    <TextInput placeholder="Descrição..." style={styles.input}
-                        onChangeText={description => this.setState({ description })}
-                        value={this.state.description} />    
-                    
-                    <View style={{
-                        flexDirection: 'row',
-                        justifyContent: 'flex-end'
-                    }}>
-                        <TouchableOpacity onPress={this.props.onCancel}>
-                            <Text style={styles.button}>Cancelar</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={this.save}>
-                            <Text style={styles.button}>Salvar</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                <TouchableWithoutFeedback onPress={this.props.onCancel}>
-                    <View style={styles.offset}></View>
-                </TouchableWithoutFeedback>
-            </Modal>
+
+        return ( <
+            Modal onRequestClose = { this.props.onCancel }
+            visible = { this.props.isVisible }
+            animationType = 'slide'
+            transparent = { true }
+            onShow = {
+                () => this.setState({...this.getInitialState() }) } >
+            <
+            TouchableWithoutFeedback onPress = { this.props.onCancel } >
+            <
+            View style = { styles.offset } > < /View> <
+            /TouchableWithoutFeedback> <
+            View style = { styles.container } >
+            <
+            Text style = { styles.header } > Nova Tarefa! < /Text> <
+            TextInput placeholder = "Título..."
+            style = { styles.input }
+            onChangeText = { title => this.setState({ title }) }
+            value = { this.state.title }
+            /> <
+            TextInput placeholder = "Descrição..."
+            style = { styles.input }
+            onChangeText = { description => this.setState({ description }) }
+            value = { this.state.description }
+            />    
+
+            <
+            View style = {
+                {
+                    flexDirection: 'row',
+                    justifyContent: 'flex-end'
+                }
+            } >
+            <
+            TouchableOpacity onPress = { this.props.onCancel } >
+            <
+            Text style = { styles.button } > Cancelar < /Text> <
+            /TouchableOpacity> <
+            TouchableOpacity onPress = { this.save } >
+            <
+            Text style = { styles.button } > Salvar < /Text> <
+            /TouchableOpacity> <
+            /View> <
+            /View> <
+            TouchableWithoutFeedback onPress = { this.props.onCancel } >
+            <
+            View style = { styles.offset } > < /View> <
+            /TouchableWithoutFeedback> <
+            /Modal>
         )
     }
 }

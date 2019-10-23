@@ -17,7 +17,7 @@ export default props => {
         AsyncStorage.removeItem('userData')
         props.navigation.navigate('Loading')
     }
-
+    
     return (
         <ScrollView>
             <View style={styles.header}>

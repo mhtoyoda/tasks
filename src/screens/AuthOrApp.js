@@ -3,12 +3,20 @@ import axios from 'axios'
 import {
     View,
     ActivityIndicator,
-    StyleSheet
+    StyleSheet,
+    YellowBox
 } from 'react-native'
 import AsyncStorage from '@react-native-community/async-storage';
 
 export default class AuthOrApp extends Component {
 
+    constructor(){
+        super()
+
+        YellowBox.ignoreWarnings(['Setting a timer', 'Warning: componentWillMount is deprecated',
+        'Warning: componentWillReceiveProps is deprecated',]);
+    }
+    
     componentDidMount = async () => {
         const json = await AsyncStorage.getItem('userData')
         const userData = JSON.parse(json) || {}
