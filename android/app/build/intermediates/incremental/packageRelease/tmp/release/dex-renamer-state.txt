@@ -1,0 +1,4 @@
+#Wed Oct 23 18:00:50 BRT 2019
+base.0=/Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

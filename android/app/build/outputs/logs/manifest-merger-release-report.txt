@@ -1,0 +1,217 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-vector-icons] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_async-storage] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/7d7e686a62c9c65b295406939572f927/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/00da4b67f0cac5faea3a12cf7979a2ff/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/9bcdfedd298220a24ebaa34a6decf94e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/64f719c1e080ec5fde77700312c4978e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/20022128e4f5309dadd090ba7efb9a32/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/69a67f2d341494473707f9da63a1f1c9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/14737759063853c823b08db8573959d6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/5354edb9f663f832f3b67cdedf6d4912/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/126e00ec8e211010cf060392ab9f5ffe/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/62898a006764882e00960a8a8898aad6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6b357290cc5e254c03cfda7902337ddb/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.transition:transition:1.1.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/364c76e826f844be560aac0f680a97a6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4bf6e1cf57c7d7a390052b3de5517a15/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d27bb20cb59520eb32a3f23aa5d39021/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fbfe4f47099afcf8b2e2252c6d7b4cc6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fb51888d8c43d35471fbd4952f00ec35/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/b91041cf10b81d5df80969a6462da05e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1b40893d7b021fb1f0309bc25605a049/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ddb08315ca619c1f4d15a625ec5dbef6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/a1e9640d1bf9319161442e7991ade937/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/e0ff267e8bf57cb566eef9e41444693e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d8cf22b86906698eec78ac80594f67f2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/440b4a33a6062b92ae7cae05789734e8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/12cb7360e3c03c0a8f29758f1d0ee669/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1fd81eaa204fa54ba04c8daeec10ad92/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6e7ec8a9bbece254458fc9664e62e4a8/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0934c5c73bef7d6d2de94585a8fd643d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4ecc1b4596d74ab6455bb614961f2c1d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/dbe25d8f04287821d8648e609a6124a8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/bdfbbf7092c1e076fa1219cbf5478258/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0d5742d4df9a0a7b264f47ee7ad4539a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ca812c117a4a6256ed07567d437ea95a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0c22488e6bbdcf784916e05a64ff7f70/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/372d1eccd20564afc9a93e1732c80d77/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/61921d406c47f2ec97bae89db7634949/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/82f965a477d0f3aefbf5259695615370/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/80aaf9f165908cecc84d33288bff118d/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+	package
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:2:3-22
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:6:5-25:19
+MERGED from [com.facebook.react:react-native:0.61.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/7d7e686a62c9c65b295406939572f927/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/7d7e686a62c9c65b295406939572f927/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6b357290cc5e254c03cfda7902337ddb/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6b357290cc5e254c03cfda7902337ddb/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6e7ec8a9bbece254458fc9664e62e4a8/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6e7ec8a9bbece254458fc9664e62e4a8/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:8:7-39
+	android:roundIcon
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:10:7-52
+	android:icon
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.tasks.MainActivity
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:13:7-23:18
+	android:screenOrientation
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:18:9-45
+	android:label
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:19:9-22:25
+action#android.intent.action.MAIN
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:20:13-65
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:20:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:21:13-73
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:21:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:24:7-84
+	android:name
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml:24:17-81
+uses-sdk
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_async-storage] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/marcelotoyoda/Documents/Projetos/Tasks/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/7d7e686a62c9c65b295406939572f927/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/7d7e686a62c9c65b295406939572f927/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/00da4b67f0cac5faea3a12cf7979a2ff/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/00da4b67f0cac5faea3a12cf7979a2ff/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/9bcdfedd298220a24ebaa34a6decf94e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/9bcdfedd298220a24ebaa34a6decf94e/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/64f719c1e080ec5fde77700312c4978e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/64f719c1e080ec5fde77700312c4978e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/20022128e4f5309dadd090ba7efb9a32/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/20022128e4f5309dadd090ba7efb9a32/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/69a67f2d341494473707f9da63a1f1c9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/69a67f2d341494473707f9da63a1f1c9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/14737759063853c823b08db8573959d6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/14737759063853c823b08db8573959d6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/5354edb9f663f832f3b67cdedf6d4912/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/5354edb9f663f832f3b67cdedf6d4912/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/126e00ec8e211010cf060392ab9f5ffe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/126e00ec8e211010cf060392ab9f5ffe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/62898a006764882e00960a8a8898aad6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/62898a006764882e00960a8a8898aad6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6b357290cc5e254c03cfda7902337ddb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6b357290cc5e254c03cfda7902337ddb/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.transition:transition:1.1.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/364c76e826f844be560aac0f680a97a6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/364c76e826f844be560aac0f680a97a6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4bf6e1cf57c7d7a390052b3de5517a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4bf6e1cf57c7d7a390052b3de5517a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d27bb20cb59520eb32a3f23aa5d39021/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d27bb20cb59520eb32a3f23aa5d39021/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fbfe4f47099afcf8b2e2252c6d7b4cc6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fbfe4f47099afcf8b2e2252c6d7b4cc6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fb51888d8c43d35471fbd4952f00ec35/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/fb51888d8c43d35471fbd4952f00ec35/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/b91041cf10b81d5df80969a6462da05e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/b91041cf10b81d5df80969a6462da05e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1b40893d7b021fb1f0309bc25605a049/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1b40893d7b021fb1f0309bc25605a049/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ddb08315ca619c1f4d15a625ec5dbef6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ddb08315ca619c1f4d15a625ec5dbef6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/a1e9640d1bf9319161442e7991ade937/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/a1e9640d1bf9319161442e7991ade937/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/e0ff267e8bf57cb566eef9e41444693e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/e0ff267e8bf57cb566eef9e41444693e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d8cf22b86906698eec78ac80594f67f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/d8cf22b86906698eec78ac80594f67f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/440b4a33a6062b92ae7cae05789734e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/440b4a33a6062b92ae7cae05789734e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/12cb7360e3c03c0a8f29758f1d0ee669/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/12cb7360e3c03c0a8f29758f1d0ee669/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1fd81eaa204fa54ba04c8daeec10ad92/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/1fd81eaa204fa54ba04c8daeec10ad92/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/518fadd027dbad813585b11ec0e628ac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6e7ec8a9bbece254458fc9664e62e4a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/6e7ec8a9bbece254458fc9664e62e4a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0934c5c73bef7d6d2de94585a8fd643d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0934c5c73bef7d6d2de94585a8fd643d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4ecc1b4596d74ab6455bb614961f2c1d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/4ecc1b4596d74ab6455bb614961f2c1d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/dbe25d8f04287821d8648e609a6124a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/dbe25d8f04287821d8648e609a6124a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/bdfbbf7092c1e076fa1219cbf5478258/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/bdfbbf7092c1e076fa1219cbf5478258/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0d5742d4df9a0a7b264f47ee7ad4539a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0d5742d4df9a0a7b264f47ee7ad4539a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ca812c117a4a6256ed07567d437ea95a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/ca812c117a4a6256ed07567d437ea95a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0c22488e6bbdcf784916e05a64ff7f70/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/0c22488e6bbdcf784916e05a64ff7f70/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/372d1eccd20564afc9a93e1732c80d77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/372d1eccd20564afc9a93e1732c80d77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/61921d406c47f2ec97bae89db7634949/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/61921d406c47f2ec97bae89db7634949/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/82f965a477d0f3aefbf5259695615370/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/82f965a477d0f3aefbf5259695615370/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/80aaf9f165908cecc84d33288bff118d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/marcelotoyoda/.gradle/caches/transforms-2/files-2.1/80aaf9f165908cecc84d33288bff118d/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/marcelotoyoda/Documents/Projetos/Tasks/android/app/src/main/AndroidManifest.xml
